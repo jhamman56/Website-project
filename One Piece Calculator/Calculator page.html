@@ -8,26 +8,40 @@
     <link rel="stylesheet" href="Calculator page.css"/>
     <style>
         .response{
-            align-items: center;
-            width: 500px;
-            height: 500px;
+            box-align: center;
+            background-color: antiquewhite;
+            width: 230px;
+            height: 200px;
             border: 1px solid red;
             
         }
 
+        .response-container{
+            width: 100%;
+            display: flex;
+            flex-direction: column;
+            justify-content: center;
+            align-items: center;
+        }
 
 
     </style>
+
 </head>
 <body>
     <h1>
        Type in any episode number! 
     </h1>
     <form>
-      <input class = "input" type="text"/>
-      <button class="btn">Submit</button>  
+      
+        
     </form>
-    <div class="response"></div>
+    <div class="response-container">
+        <input class = "input" type="text"/>
+        <button class="btn">Submit</button>
+        <div class="response"></div>
+    </div>
+    
     <script src="Calculator.js"></script>
 </body>
 </html>
